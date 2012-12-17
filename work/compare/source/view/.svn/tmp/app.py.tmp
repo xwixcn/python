@@ -1,0 +1,72 @@
+#!/usr/bin/env python
+# -*- coding=utf-8 -*-
+
+import web
+import model
+import json
+#from compare import Compare
+
+<<<<<<< .mine
+urls = ( '/get/servicestatus', 'GetStatus', \
+         '/startservice', 'StartService', \
+         '/post/addresult', 'PostResult', \
+         '/post/sitedata', 'sitedata',
+         '/post/comparedata', 'comparedata',
+         '/', 'index'
+=======
+urls = ( 
+
+         '/home', 'index',
+         '/rounddata/(\d+)', 'getroundIDdata'
+>>>>>>> .r38343
+     )
+
+render = web.template.render( 'templates' )
+
+class index:
+    def GET( self ):
+<<<<<<< .mine
+        return render.index('运行','运行')
+=======
+>>>>>>> .r38343
+        
+<<<<<<< .mine
+class sitedata:
+    def GET( self ):
+        model.getsitedata()
+        return render.index('成功','运行')
+=======
+        data = [{"roundid": 2, "unknwon": 0, "pass": 3, "time": "2012-11-14T20:49:32", "error": 0, "fail": 0, "total": 3}, {"roundid": 1, "unknwon": 0, "pass": 3, "time": "2012-11-14T20:46:18", "error": 0, "fail": 0, "total": 3}]
+        print data[0]
+        return render.index( data )
+        
+class getroundIDdata:
+    def GET( self, num ):
+        data = {"patternstr":[ {"status": "F", "detailInfo": "", "name": "\u6362\u624b\u7387\u5927\u4e8e8"}, {"status": "F", "detailInfo": "", "name": "\u5965\u8fd0\u6982\u5ff5\u80a1"}]}
+        return render.roundIDdata( num, data )
+>>>>>>> .r38343
+      
+<<<<<<< .mine
+class comparedata:
+    def GET( self ):
+        model.getcomparedata()
+        raise web.seeother( '/' )
+=======
+#class comparedata:
+#    def POST( self ):
+#        model.postcomparedata()
+#        raise web.seeother( '/' )
+>>>>>>> .r38343
+
+app = web.application( urls, globals() )
+<<<<<<< .mine
+#application=app.wsgifunc()
+if __name__=="__main__":
+    app.run()
+=======
+#application = app.wsgifunc()
+if __name__ == "__main__":
+    app.run()
+>>>>>>> .r38343
+
+

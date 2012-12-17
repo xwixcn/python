@@ -1,0 +1,71 @@
+<<<<<<< .mine
+$def with(data1,data2)
+<html xmlns:math="http://exslt.org/math" xmlns:testng="http://testng.org">
+=======
+$def with(data)
+<html>
+>>>>>>> .r38343
+    <head>
+        <title>Index Page</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </head>
+    <body>
+
+        <table align="center" border="1" cellspacing="0" bordercolor="#000000" width="100%">
+            <caption class="STYLE10" >
+            <font face="verdana" size="12" color="blue">首页信息</font>
+            </caption>
+            <tr height="30px" bgcolor="#3399CC" >
+                <td align='center'>组件名称</td><td>
+                <table align="center" border="0" cellspacing="0" width="100%" >
+
+<<<<<<< .mine
+                    <th width="10" align='center'>查看比对信息</th>
+                    <th width="50%" align="center" >查看单个网站信息</th>   
+=======
+                    <td  align="center" valign='top' width="15%" >轮号</td>
+                    <td  align="center" valign='top'width="15%">总的问句数</td>
+                    <td  align="center" valign='top'width="10%">成功数目</td>
+                    <td  align="center" valign='top'width="10%">失败数目</td>
+                    <td  align="center" valign='top'width="10%">错误数目</td>
+                    <td  align="center" valign='top'width="10%">未知原因</td>
+                    <td  align="center" valign='top'width="15%">运行时间</td>
+>>>>>>> .r38343
+
+<<<<<<< .mine
+                </tr>
+            </table>
+            <label align='center'>首页信息</label>
+            <table>
+                <tr >
+                    <td  align="center" valign='top'>获取网站数据</td>
+                    <td align="center"><a href="/post/sitedata">$data1</a></td>
+                </tr>
+            </table>
+        </div>
+=======
+                </table>
+            </tr>
+
+            <tr >
+                <td width="25%" align="center" ><a>verfy</a></td>
+
+                <td>
+                <table align="center" border="1"   width="100%" >
+                    $for elem in data:
+                        <tr >
+                            <td  align="center" valign='top' width="15%" ><a href="/rounddata/$elem['roundid']" target="_blank">$elem["roundid"]</a></td>
+                            <td  align="center" valign='top'width="15%">$elem["total"]</td>
+                            <td  align="center" valign='top'width="10%">$elem["pass"]</td>
+                            <td  align="center" valign='top'width="10%">$elem["fail"]</td>
+                            <td  align="center" valign='top'width="10%">$elem["error"]</td>
+                            <td  align="center" valign='top'width="10%">$elem["unknwon"]</td>
+                            <td  align="center" valign='top'width="15%">$elem["time"]</td>
+                        </tr>
+                </table>
+>>>>>>> .r38343
+
+        </table>
+
+    </body>
+</html>
