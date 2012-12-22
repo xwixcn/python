@@ -1,0 +1,133 @@
+2012-11-12 18:09:54,665	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: Internal Server Error
+2012-11-12 18:10:13,545	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: Internal Server Error
+2012-11-12 18:10:24,565	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: Internal Server Error
+2012-11-13 11:57:17,014	ERROR	[webdataUtil.get_ontology_data]	HTTP Error 500: Internal Server Error
+2012-11-13 11:57:17,015	DEBUG	[webdataUtil.get_ontology_data]	乐视网年复合增长率
+not return json data
+2012-11-15 11:18:42,682	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-15 11:23:26,694	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-15 11:26:00,510	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-15 11:32:06,150	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-15 13:50:00,697	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-15 13:50:30,764	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:<urlopen error [Errno 113] No route to host>
+2012-11-15 13:53:07,159	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:<urlopen error [Errno 113] No route to host>
+2012-11-15 13:55:16,073	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:<urlopen error [Errno 113] No route to host>
+2012-11-15 13:56:22,605	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: INTERNAL SERVER ERROR
+2012-11-15 13:58:14,765	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:<urlopen error [Errno 111] Connection refused>
+2012-11-15 14:03:11,797	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: INTERNAL SERVER ERROR
+2012-11-15 14:04:23,726	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: INTERNAL SERVER ERROR
+2012-11-15 14:05:02,076	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: INTERNAL SERVER ERROR
+2012-11-15 14:06:53,366	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: INTERNAL SERVER ERROR
+2012-11-15 14:08:31,240	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: INTERNAL SERVER ERROR
+2012-11-15 14:08:55,724	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: INTERNAL SERVER ERROR
+2012-11-15 14:13:24,820	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: INTERNAL SERVER ERROR
+2012-11-15 14:13:46,185	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: INTERNAL SERVER ERROR
+2012-11-15 14:14:57,269	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: INTERNAL SERVER ERROR
+2012-11-15 14:56:56,003	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: INTERNAL SERVER ERROR
+2012-11-15 15:32:18,236	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: INTERNAL SERVER ERROR
+2012-11-15 15:33:01,268	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: INTERNAL SERVER ERROR
+2012-11-19 10:50:32,645	ERROR	[MainCompare.getCases]	sorry,can't receive data ,reason:get cases encount HTTPError, <class 'urllib2.HTTPError'>
+2012-11-19 10:51:08,973	ERROR	[MainCompare.getCases]	sorry,can't receive data ,reason:get cases encount HTTPError, <class 'urllib2.HTTPError'>
+2012-11-19 10:55:00,387	ERROR	[MainCompare.getCases]	sorry,can't receive data ,reason:get cases encount HTTPError, <class 'urllib2.HTTPError'>
+2012-11-19 10:55:01,230	ERROR	[MainCompare.getCases]	sorry,can't receive data ,reason:get cases encount HTTPError, <class 'urllib2.HTTPError'>
+2012-11-19 10:55:01,583	ERROR	[MainCompare.getCases]	sorry,can't receive data ,reason:get cases encount HTTPError, <class 'urllib2.HTTPError'>
+2012-11-19 10:55:02,163	ERROR	[MainCompare.getCases]	sorry,can't receive data ,reason:get cases encount HTTPError, <class 'urllib2.HTTPError'>
+2012-11-19 10:58:41,023	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:<urlopen error [Errno 111] Connection refused>
+2012-11-19 10:59:02,557	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:<urlopen error [Errno 111] Connection refused>
+2012-11-19 10:59:48,342	ERROR	[MainCompare.getCases]	sorry,can't receive data ,reason:get cases encount HTTPError, <class 'urllib2.HTTPError'>
+2012-11-19 11:00:26,899	ERROR	[MainCompare.getCases]	sorry,can't receive data ,reason:get cases encount HTTPError, <class 'urllib2.HTTPError'>
+2012-11-19 11:00:45,531	ERROR	[MainCompare.getCases]	sorry,can't receive data ,reason:get cases encount HTTPError, <class 'urllib2.HTTPError'>
+2012-11-19 11:00:45,748	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: INTERNAL SERVER ERROR
+2012-11-19 11:00:54,545	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:<urlopen error [Errno 111] Connection refused>
+2012-11-19 11:01:44,381	ERROR	[MainCompare.getCases]	sorry,can't receive data ,reason:get cases encount HTTPError, <class 'urllib2.HTTPError'>
+2012-11-19 11:01:44,517	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: INTERNAL SERVER ERROR
+2012-11-19 11:02:07,614	ERROR	[MainCompare.getCases]	sorry,can't receive data ,reason:get cases encount HTTPError, <class 'urllib2.HTTPError'>
+2012-11-19 11:02:07,748	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: INTERNAL SERVER ERROR
+2012-11-19 11:02:40,475	ERROR	[MainCompare.getCases]	sorry,can't receive data ,reason:get cases encount HTTPError, <class 'urllib2.HTTPError'>
+2012-11-19 11:02:40,651	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: INTERNAL SERVER ERROR
+2012-11-19 11:04:33,727	ERROR	[MainCompare.getCases]	sorry,can't receive data ,reason:get cases encount HTTPError, <class 'urllib2.HTTPError'>
+2012-11-19 14:46:41,323	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-19 15:01:08,164	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-19 15:10:10,107	ERROR	[MultiCompare.get_one_site_data]	%s,%s
+2012-11-19 15:11:53,590	ERROR	[MultiCompare.get_one_site_data]	%s,%s
+2012-11-19 15:13:54,992	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-19 15:13:54,992	ERROR	[MultiCompare.get_one_site_data]	,string indices must be integers, not str
+2012-11-19 15:16:05,121	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-19 15:25:47,391	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-19 15:27:29,953	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-19 15:29:12,271	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-19 15:31:21,049	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-19 15:40:08,101	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-19 15:49:54,615	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-19 16:07:44,949	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-19 16:16:01,456	ERROR	[MainCompare.getCases]	sorry,can't receive data ,reason:get cases encount HTTPError, <class 'urllib2.HTTPError'>
+2012-11-19 16:16:01,463	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: Internal Server Error
+2012-11-19 16:16:15,784	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: Internal Server Error
+2012-11-19 16:20:34,550	ERROR	[MainCompare.getCases]	sorry,can't receive data ,reason:get cases encount HTTPError, <class 'urllib2.HTTPError'>
+2012-11-19 16:20:34,776	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: Internal Server Error
+2012-11-19 16:21:40,387	ERROR	[MainCompare.getCases]	sorry,can't receive data ,reason:get cases encount HTTPError, <class 'urllib2.HTTPError'>
+2012-11-19 16:21:40,529	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: INTERNAL SERVER ERROR
+2012-11-19 16:22:02,666	ERROR	[MainCompare.getCases]	sorry,can't receive data ,reason:get cases encount HTTPError, <class 'urllib2.HTTPError'>
+2012-11-19 16:22:03,003	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:HTTP Error 500: INTERNAL SERVER ERROR
+2012-11-19 16:25:51,296	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-20 10:19:16,498	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-20 10:22:21,947	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-20 10:35:34,356	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-20 10:38:53,674	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-20 10:52:27,244	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-20 10:54:49,999	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-20 14:02:23,248	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-20 14:23:16,287	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-20 14:40:06,716	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-22 13:44:33,851	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-22 14:00:00,808	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-22 14:03:54,360	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-22 19:11:11,559	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-22 19:28:57,714	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-22 19:32:00,747	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-22 19:35:08,319	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-22 19:42:05,156	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-22 19:48:16,547	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-22 19:52:19,192	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-23 10:18:51,518	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-23 10:24:33,884	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-23 10:31:01,068	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-23 10:33:50,355	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-23 10:37:01,897	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-23 10:50:38,353	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-23 10:55:27,416	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-23 11:16:00,952	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-23 13:48:38,043	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-23 14:25:57,039	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-23 14:32:34,398	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-23 14:43:33,823	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-23 14:53:15,977	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-23 15:31:44,761	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-23 15:52:41,606	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-23 15:58:19,837	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-24 09:50:37,401	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-24 10:06:51,387	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-24 10:10:27,231	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-24 10:25:04,886	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-11-24 10:53:05,088	DEBUG	[webdataUtil.get_ontology_data]	not return json data
+2012-12-04 09:52:09,528	ERROR	[MainCompare.getCases]	sorry,can't receive data ,reason:get cases encount URLError, <class 'urllib2.URLError'>
+2012-12-04 10:54:28,726	ERROR	[MainCompare.getCases]	sorry,can't receive data ,reason:get cases encount URLError, <class 'urllib2.URLError'>
+2012-12-04 10:54:49,739	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:<urlopen error [Errno 10060] >
+2012-12-04 10:56:54,371	ERROR	[webdataUtil.get_ontology_data]	<urlopen error [Errno 10060] >
+2012-12-04 10:56:54,382	DEBUG	[webdataUtil.get_ontology_data]	连跌7天的股票not return json data
+2012-12-04 10:56:54,785	ERROR	[webdataUtil.get_ontology_data]	<urlopen error [Errno 10060] >
+2012-12-04 10:56:54,785	DEBUG	[webdataUtil.get_ontology_data]	roe大于10%，总资产小于100亿元not return json data
+2012-12-04 10:57:15,448	ERROR	[webdataUtil.get_ontology_data]	<urlopen error [Errno 10060] >
+2012-12-04 10:57:15,448	DEBUG	[webdataUtil.get_ontology_data]	煤炭行业市盈率低于40的股票not return json data
+2012-12-04 10:57:15,832	ERROR	[webdataUtil.get_ontology_data]	<urlopen error [Errno 10060] >
+2012-12-04 10:57:15,832	DEBUG	[webdataUtil.get_ontology_data]	连续两天振幅超过10%not return json data
+2012-12-04 10:57:36,888	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:<urlopen error [Errno 10060] >
+2012-12-04 10:58:59,612	ERROR	[webdataUtil.get_ontology_data]	<urlopen error [Errno 10060] >
+2012-12-04 10:58:59,612	DEBUG	[webdataUtil.get_ontology_data]	连跌7天的股票not return json data
+2012-12-04 10:59:00,142	ERROR	[webdataUtil.get_ontology_data]	<urlopen error [Errno 10060] >
+2012-12-04 10:59:00,142	DEBUG	[webdataUtil.get_ontology_data]	roe大于10%，总资产小于100亿元not return json data
+2012-12-04 10:59:20,668	ERROR	[webdataUtil.get_ontology_data]	<urlopen error [Errno 10060] >
+2012-12-04 10:59:20,668	DEBUG	[webdataUtil.get_ontology_data]	煤炭行业市盈率低于40的股票not return json data
+2012-12-04 10:59:21,198	ERROR	[webdataUtil.get_ontology_data]	<urlopen error [Errno 10060] >
+2012-12-04 10:59:21,198	DEBUG	[webdataUtil.get_ontology_data]	连续两天振幅超过10%not return json data
+2012-12-04 10:59:42,301	ERROR	[MainCompare.postData]	sorry,can't post data ,reason:<urlopen error [Errno 10060] >

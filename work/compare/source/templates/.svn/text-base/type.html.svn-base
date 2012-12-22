@@ -1,0 +1,58 @@
+$def with(data)
+<html>
+    <head>
+        <title>Index Page</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </head>
+    <body>
+
+        <table align="center" border="1" cellspacing="0" bordercolor="#000000" width="100%">
+            <caption class="STYLE10" >
+                <font face="verdana" size="12" color="blue">所有信息</font>
+            </caption>
+            <tr height="30px" bgcolor="#3399CC" >
+                <table align="center" border="0" cellspacing="0" width="100%" >
+
+                    <td  align="center" valign='top' width="15%" >轮号</td>
+                    <td  align="center" valign='top'width="15%">总的问句数</td>
+                    <td  align="center" valign='top'width="10%">成功数目</td>
+                    <td  align="center" valign='top'width="10%">失败数目</td>
+                    <td  align="center" valign='top'width="10%">错误数目</td>
+                    <td  align="center" valign='top'width="10%">未知原因</td>
+                    <td  align="center" valign='top'width="15%">运行时间</td>
+
+                </table>
+            </tr>
+                <tr >
+                <td width="25%" align="center" ><a>$result["type"]</a></td>
+                <td>
+                <table align="center" border="1"   width="100%" >
+                
+                $if result["status"]:
+                    $for elem in result["status"]:
+                        <tr class="typerow">
+                        <td  align="center" valign='top' width="15%" ><a href="/rounddata/$elem['roundid']" target="_blank">$elem["roundid"]</a></td>
+                        <td  align="center" valign='top'width="15%">$elem["total"]</td>
+                        <td  align="center" valign='top'width="10%">$elem["pass"]</td>
+                        <td  align="center" valign='top'width="10%">$elem["fail"]</td>
+                        <td  align="center" valign='top'width="10%">$elem["error"]</td>
+                        <td  align="center" valign='top'width="10%">$elem["unknwon"]</td>
+                        <td  align="center" valign='top'width="15%">$elem["time"]</td>
+                        </tr>
+                $else:
+                        <tr >
+                        <td  align="center" valign='top' width="15%" >0</td>
+                        <td  align="center" valign='top'width="15%">0</td>
+                        <td  align="center" valign='top'width="10%">0</td>
+                        <td  align="center" valign='top'width="10%">0</td>
+                        <td  align="center" valign='top'width="10%">0</td>
+                        <td  align="center" valign='top'width="10%">0</td>
+                        <td  align="center" valign='top'width="15%">0</td>
+                        </tr>
+                </table>
+                </tr>
+
+        </table>
+
+    </body>
+</html>
