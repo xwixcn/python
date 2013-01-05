@@ -1,14 +1,14 @@
 10
 
 dir
-45145
-svn://192.168.23.253:/product/QA/FuntionTest/compare/source/templates
-svn://192.168.23.253:
+46666
+svn://172.20.23.253/product/QA/FuntionTest/compare/source/templates
+svn://172.20.23.253
 
 
 
-2012-12-20T05:35:07.024848Z
-44508
+2012-12-29T07:36:01.074169Z
+46603
 hudson
 
 
@@ -25,18 +25,6 @@ hudson
 
 
 a040f60c-cf44-427d-8f88-9b95427dc95e
-
-roundIDdata.html
-file
-
-
-
-
-2012-12-20T02:33:47.000000Z
-ce6aa83192a5e5f553ef86f3045cdc99
-2012-12-20T05:35:07.024848Z
-44508
-hudson
 
 
 
@@ -45,62 +33,15 @@ hudson
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-4478
-
-control.html
-file
-
-
-
-
-2012-12-19T08:10:55.000000Z
-c8119c5d9bed5866566185b625800732
-2012-12-20T05:35:07.024848Z
-44508
-hudson
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1118
+((conflict case dir update edited deleted (version svn://172.20.23.253 5 45508 product/QA/FuntionTest/compare/source/templates/case none) (version svn://172.20.23.253 5 46129 product/QA/FuntionTest/compare/source/templates/case dir)))
 
 type.html
 file
 
 
 
-
-2012-12-19T08:10:55.000000Z
+delete
+2012-12-25T01:49:15.276914Z
 fcab76da3d77e1834e5aa13444fad370
 2012-12-20T05:35:07.024848Z
 44508
@@ -128,16 +69,16 @@ hudson
 
 2948
 
-sourcetype.html
+roundIDdata.html
 file
 
 
 
-
-2012-12-19T08:10:55.000000Z
-1d160dfec50e01b03c65dab6f8fc5ba2
-2012-12-20T05:35:07.024848Z
-44508
+delete
+2012-12-27T06:20:15.575544Z
+ce22e85ef51c1db609af85e1e8502d99
+2012-12-27T06:59:13.391334Z
+46129
 hudson
 
 
@@ -160,7 +101,41 @@ hudson
 
 
 
-3485
+4489
+
+sourcetype.html
+file
+
+
+
+delete
+2012-12-26T03:02:34.879354Z
+23b18297c16eed267435442748a7fe18
+2012-12-27T06:59:13.391334Z
+46129
+hudson
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3495
 
 config.html
 file
@@ -168,10 +143,10 @@ file
 
 
 
-2012-12-19T08:10:55.000000Z
-3741e2723ddbfdfe595c6e83361d540c
-2012-12-20T05:35:07.024848Z
-44508
+2012-12-25T06:16:05.851666Z
+2b984c9f0f0dad916cd0b65759bd3e9b
+2012-12-25T06:27:34.090316Z
+45508
 hudson
 
 
@@ -194,75 +169,7 @@ hudson
 
 
 
-691
-
-casemanager.html
-file
-
-
-
-
-2012-12-19T08:10:55.000000Z
-9a4018798442439bc48a546316cf80ac
-2012-12-20T05:35:07.024848Z
-44508
-hudson
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1138
-
-compare.html
-file
-
-
-
-
-2012-12-19T08:10:55.000000Z
-c76e5b8d70bb854b0d6c5f8b4952d8e1
-2012-12-20T05:35:07.024848Z
-44508
-hudson
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4792
+884
 
 index.html
 file
@@ -270,10 +177,10 @@ file
 
 
 
-2012-12-19T08:10:55.000000Z
-66431f94944b8662e7c6a8c0a1cfe8da
-2012-12-20T05:35:07.024848Z
-44508
+2012-12-29T07:35:53.644570Z
+9696f1e6889df2b1815ebaf941178149
+2012-12-29T07:36:01.074169Z
+46603
 hudson
 
 
@@ -296,18 +203,31 @@ hudson
 
 
 
-3410
+3097
 
-content.html
+job
+dir
+
+case
+dir
+
+
+
+delete
+
+tag
+dir
+
+resultmanager.html
 file
 
 
 
-
-2012-12-19T08:10:55.000000Z
-9a4018798442439bc48a546316cf80ac
-2012-12-20T05:35:07.024848Z
-44508
+delete
+2012-12-27T06:19:19.404331Z
+d647a15dc720a70ce09d517a22d8d5dc
+2012-12-27T06:59:13.391334Z
+46129
 hudson
 
 
@@ -330,5 +250,8 @@ hudson
 
 
 
-1138
+3085
+
+result
+dir
 

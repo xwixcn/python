@@ -64,7 +64,7 @@ def getMultiCompareResult( jobid ):
         sentence_name = "sentences__" + jobid
         cases = redis.hkeys( sentence_name )
         if cases:
-            case_result = Multicompare( cases )
+            case_result = Multicompare( jobid, cases )
         else:
             case_result = ""
         print '比对完成，结果为%s,\n开始向数据库插入结果' % ( case_result )

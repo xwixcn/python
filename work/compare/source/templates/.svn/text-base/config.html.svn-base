@@ -4,12 +4,23 @@ $def with(data)
 <title>
 test Page!
 </title>
-<script src="/static/compare.js"> </script>
+<script type="text/javascript">
+function change_readonly()
+{
+    var nodelist=document.getElementsByName("lname");
+    var i=0;
+    
+    for(i=0;i<nodelist.length;i++)
+    {
+     nodelist[i].readOnly=false;
+    }
+
+} </script>
 </head>
 <body>
     <div id="txt"></div>
     <div>
-<form action="/edit/config" method="post" >
+<form action="/config/edit" method="post" >
     $for section,content in data.iteritems():   
         <p>模块:$section</p>
         $for elem in content:
