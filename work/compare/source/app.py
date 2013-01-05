@@ -5,40 +5,58 @@ import web
 import model
 import json
 
-
-
-#from compare import Compare
-
 urls = ( 
 
          '/home', 'index',
-         '/rounddata/(\d+)', 'getroundIDdata',
-         '/results/(.*)', 'getTypedata',
-         '/start/single', 'singlecompare',
-         '/start/multi', 'multicompare',
-         '/to/control', 'jumptocontrol',
-         '/get/config', 'readconfig',
-         '/edit/config', 'editconfig',
-         '/casemanager', 'casemanage',
-         '/casemanager/regression', 'getselectdata',
-         '/casemanager/tag/(\d+)', 'gettagcontent'
- 
          
-
+         '/tag', 'tagindex',
+         '/tag/get', 'tagget',
+         '/tag/edit/(\d+)', 'tagedit',
+         
+         '/config/show', 'readconfig',
+         '/config/edit', 'editconfig',
+         
+         '/case/(\d+)', 'caseget',
+         '/case/edit/(\d+)', 'caseedit',
+         
+         '/result', 'resultindex',
+         '/result/round/(\d+)', 'getroundIDdata',
+         '/result/type/(.*)', 'getTypedata',
+         
+         '/job', 'jobindex',
+         '/job/start/(.*)', 'jobstart',
+         '/job/kill/(\d+)', 'jobkill',
+         '/job/status/(\d+)', 'jobstatus',
+         '/job/record/(\d+)', 'jobrecord'
+ 
      )
 
 render = web.template.render( 'templates' )
+jobrender = web.template.render( 'templates/job' )
+caserender = web.template.render( 'templates/tag' )
+resultrender = web.template.render( 'templates/result' )
+#result zone
+app = web.application( urls, globals() )
+
 
 class index:
+    def GET( self ):
+        return render.index()
+    def POST( self ):
+        data = web.data()
+        return data
+
+class resultindex:
     '''
     show the home page
     '''
     def GET( self ):    
         ( status, data ) = model.getAllData() 
         if status == 0:
-            return render.index( data )
+            return resultrender.resultmanager( data )
         else:
             return web.notfound()
+    
         
 class getroundIDdata:
     '''
@@ -47,7 +65,7 @@ class getroundIDdata:
     def GET( self, num ):
         ( status, data ) = model.getroundIDdata( num )
         if status == 0:
-            return render.roundIDdata( num, data )
+            return resultrender.roundIDdata( num, data )
         else:
             return web.notfound( data )
 
@@ -58,34 +76,11 @@ class getTypedata:
     def GET( self, Type ):
         ( status, data ) = model.gettypedata( Type )
         if status == 0:
-            return render.sourcetype( Type, data )
+            return resultrender.sourcetype( Type, data )
         else:
             return web.notfound( data )
 
-class jumptocontrol:
-    '''
-    jump to the control page
-    '''
-    def GET( self ):
-        return render.control()
-      
-class multicompare:
-    '''
-    exec the multicompare task
-    '''
-    def GET( self ):
-        model.postcomparedata()
-        return 'OK'
-
-class singlecompare:
-    '''
-    exec the singlesitedata task
-    '''
-    def GET( self ):
-        model.postsitedata()
-        return 'OK'
-        #web.seeother( '/home' )
-        
+ 
 class readconfig:
     '''
     show the edit config page
@@ -94,10 +89,6 @@ class readconfig:
         data = model.getconfigcontent()
         print data
         return render.config( data )
-    def POST( self ):
-        data = web.data()
-        model.setconfigcontent( data )
-        web.seeother( '/get/config' )
 
 class editconfig:
     '''
@@ -108,37 +99,90 @@ class editconfig:
         model.setconfigcontent( data )
         return "配置文件修改成功"
 
-class casemanage:
+
+#result zone    
+
+#case zone
+class caseget:
     '''
-    show the casemanager page
+    tag首页
     '''
+    def GET( self, tag ):
+        data = model.getcase( tag )
+        return data
+
+
+class caseedit:
+    '''
+    编辑case
+    '''
+    def POST( self , tagid ):
+        data = web.data()
+        status = model.postcase( tagid, data )
+        return status
+
+#tag zone
+class tagindex:
     def GET( self ):
-        return render.content()
-    def POST( self ):
+        return caserender.tag()
+    
+class tagget:
+    def GET( self ):
+        data = model.gettagcontent()
+        print data
+        return data
+
+class tagedit:
+    '''
+    编辑tag
+    '''
+    def POST( self , tagid ):
         data = web.data()
         print data
-        return "删除成功"
-
-class gettagcontent:
+        status = model.posttag( tagid, data )
+        return status
+#job zone
+class jobindex:
     '''
-    get each tag data
-    '''
-    def GET( self, i ):
-        data = model.gettagcontent( i )
-        return data
-    
-class getselectdata:
-    '''
-    get the select data
+    job首页
     '''
     def GET( self ):
-        data = model.getselectdata()
-        return data;
+        return jobrender.jobcontrol()
 
-app = web.application( urls, globals() )
-application = app.wsgifunc()
-#if __name__ == "__main__":
-#    app = web.application( urls, globals() )
-#    app.run()
+class jobstart:
+    '''
+    启动一个job
+    '''
+    def GET( self, jobname ):
+        data = model.startjob( jobname )
+        return data
+
+class jobstatus:
+    '''
+    获取一个job状态
+    '''
+    def GET( self , jobid ):
+        data = model.getstatus( jobid )
+        return data
+
+
+class jobkill:
+    '''
+    停止job
+    '''  
+    def GET( self, jobid ):
+        data = model.killjob( jobid )
+        return data
+class jobrecord:
+    '''
+    返回job的运行记录页面
+    '''
+    def GET( self , num ):
+        return jobrender.jobrecord()
+
+#application = app.wsgifunc()
+if __name__ == "__main__":
+    app = web.application( urls, globals() )
+    app.run()
 
 

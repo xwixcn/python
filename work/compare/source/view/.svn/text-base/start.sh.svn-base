@@ -1,1 +1,0 @@
-uwsgi -x uwsgi.xml

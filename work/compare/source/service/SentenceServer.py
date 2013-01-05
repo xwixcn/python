@@ -48,11 +48,12 @@ class GetHandler( BaseHTTPRequestHandler ):
             self.wfile.write( resp )
 
 def getcase( jobid ):
+    redis_1 = redisClient( "192.168.23.76", 6379, 1 )
     ( status, msg ) = unit.getCases()
     print '获取问句...'
     if status == 0:
         for x in msg:
-            print x
+            redis_1.appendjoboutput( jobid, x + "!" );
     else:
         print '获取问句失败'
         

@@ -1,2 +1,0 @@
-#LWP-Cookies-2.0
-Set-Cookie3: cid=8537i8t4hkj1jk30ks310vhfo3; path="/"; domain="x.10jqka.com.cn"; path_spec; expires="2013-08-29 06:22:03Z"; version=0

@@ -13,7 +13,8 @@ def getCases():
         data_sevices_url = config.get( '公共配置', '接收问句地址' )
         try:
             data = urllib2.urlopen( data_sevices_url ).read()
-            cases = json.loads( data )["name"]
+            Cases = json.loads( data )
+            cases = [result["name"] for result in Cases]
             return 0, cases
         except urllib2.HTTPError:
             errorMsg = "get cases encount HTTPError, %s" % sys.exc_info()[0]
@@ -48,7 +49,6 @@ def postData( resultdata, url = "", method = "POST" ):
         except urllib2.URLError, e:
             print e
             return -1
-
 
 
 
