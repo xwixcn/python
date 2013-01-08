@@ -1,5 +1,5 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;padding: 0;border: 0;outline: 0;font-weight: inherit;font-style: inherit;font-size: 100%;font-family: inherit;vertical-align: baseline;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,  caption,  tfoot, thead, tr, th, td {
+	margin: 0;padding: 0;border: 1;outline: 0;font-weight: inherit;font-style: inherit;font-size: 100%;font-family: inherit;vertical-align: baseline;}
 body {color: #2f332a;font: 15px/21px Arial, Helvetica, simsun, sans-serif;background: #f0f6e4 \9;}
 h1, h2, h3, h4, h5, h6 {color: #2f332a;font-weight: bold;font-family: Helvetica, Arial, sans-serif;padding-bottom: 5px;}
 h1 {font-size: 24px;line-height: 34px;text-align: center;}
@@ -19,15 +19,8 @@ ul.list {margin-left: 17px;}
 
 div.content_wrap {margin:0;}
 div.content_wrap div.left{float: left;width: 250px;height:1000px}
-div.content_wrap div.right{float: right;height:600px;width:1000px}
+div.content_wrap div.right{padding-left:250px }
 div.zTreeDemoBackground {width:250px;height:362px;text-align:left;}
-table.caselist{ BORDER-RIGHT: gray 1px solid;
-  BORDER-TOP: #ffffff 1px solid; 
-  BORDER-LEFT: #ffffff 1px solid; 
-  CURSOR: hand; COLOR: #000000; 
-  BORDER-BOTTOM: #ffffff 1px solid; 
-  BACKGROUND-COLOR: #eeeeee; font-size:15px;}
-
 ul.ztree {margin-top: 0;border: 1px solid #617775;background: #f0f6e4;width:220px;height:600px;overflow-y:scroll;overflow-x:auto;}
 
 

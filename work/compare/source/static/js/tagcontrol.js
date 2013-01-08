@@ -12,7 +12,8 @@ var setting = {
 		onRightClick : OnRightClick,
 		onRename : OnRename,
 		onRemove : OnRemove,
-		onDrop : OnDrop
+		onDrop : OnDrop,
+		onDblClick: OnDbClick
 
 	},
 	edit : {
@@ -47,7 +48,11 @@ function OnRightClick(event, treeId, treeNode) {
 		showRMenu("node", event.clientX, event.clientY);
 	}
 }
-
+function OnDbClick(event, treeId, treeNode)
+{
+	var caseurl="/case/"+treeNode.id+'/'+treeNode.name;
+	$("#testIframe").attr("src",caseurl);
+}
 function showRMenu(type, x, y) {
 	/*
 	 * 显示菜单列表
@@ -169,8 +174,11 @@ function removeTreeNode() {
 				zTree.removeNode(nodes[0], callbackFlag = true);
 			}
 		} else {
-
+			var msg="删除节点以后无法恢复数据，请先确认该节点下面无问句."
+			if(confirm(msg)==true)
+			{
 			zTree.removeNode(nodes[0], callbackFlag = true);
+			}
 
 		}
 	}
@@ -259,17 +267,14 @@ function tclick() {
 	}
 }
 
+
 function checkTreeNode(checked) {
 	/*
 	 * 选中当前节点
 	 */
 	var nodes = zTree.getSelectedNodes();
 	if (nodes && nodes.length > 0) {
-		var selectvalue = nodes[0].id;
 		zTree.checkNode(nodes[0], checked, true);
-		if (checked) {
-			showcasedata(selectvalue)
-		}
 	}
 	hideRMenu();
 }
@@ -282,154 +287,9 @@ function resetTree() {
 	jQuery.fn.zTree.init(jQuery("#treeDemo"), setting, zNodes);
 }
 
-function showcasedata(selectvalue) {
 
-	/* 根据select获取内容 */
-	var selectvalue = selectvalue;
-	$(".contentlist").remove();
-	$(".singleadd").remove();
-	$(".batchadd").remove();
-	var Url = "/case/" + selectvalue;
-	var singlebutton = $('<input class="singleadd" type="button" value="新增单个case">')
-	var batchbutton=$('<input class="batchadd" type="button" value="批量增加case">')
-	singlebutton.click(function() {
-				addrow(selectvalue);
-			});
-			var posturl = "/case/edit/" + selectvalue;
-	batchbutton.click(function(selectvalue){
-		var scrollTop = document.body.scrollTop;
-		if(scrollTop == 0){
-			scrollTop = document.documentElement.scrollTop;
-		}
-		$('#caseform').attr("action",posturl);
-		$("#cginfo").css("top",150+scrollTop);
-		$("#cginfo").toggle("slow");
-	
 
-	});
-	
-	singlebutton.appendTo($("#Singleincrease"));
-	batchbutton.appendTo($("#Batchincrease"));
-	
-	$.ajax({
-				url : Url,
-				statusCode : {
-					404 : function() {
-						alert("没有此tag数据");
-					}
-				},
-				success : function(json) {
-					var json = $.parseJSON(json);
-					$.each(json, function(index, content) {
-								var tr = $("<tr></tr>");
-								var index = index + 1;
-								tr.attr("id", "tr" + index);
-								tr.attr("class", "contentlist");
 
-								$.each(content, function(i, Text) {
-											var td = $("<td></td>");
-											td.text(Text);
-											td.attr("id", i);
-											td.attr("class", "tdcontent"
-															+ index);
-											td.appendTo(tr);
-										})
-								var del = $("<button >删除</button>");
-								del.attr("id", "del" + index);
-								var submit = $("<button>提交</button>");
-								submit.attr("id", "submit" + index);
-								var td = $("<td></td>")
-								del.appendTo(td);
-								submit.appendTo(td);
-								submit.hide();
-								td.appendTo(tr);
-								tr.appendTo($("table"));
-								delrow(index, content.id, selectvalue);
-								submitdata(index, selectvalue);
-								edittable(index);
-							});
-					$.easypage({
-								'contentclass' : 'contentlist',
-								'navigateid' : 'navigatediv',
-								'everycount' : 50,
-								'navigatecount' : 5
-							});
-				}
-			});
-
-}
-
-function addrow(selectvalue) {
-	/* 增加行 */
-	var tr = $("<tr></tr>");
-	var index = Date.parse(new Date());
-	tr.attr("id", "tr" + index);
-	tr.attr("class", "contentlist");
-	tr.appendTo($("tbody"));
-	var newarry = {
-		"patternStr" : "",
-		"patternCode" : "",
-		"treeCode" : "",
-		"md5" : "",
-		"id" : "sss",
-		"name" : ""
-
-	}
-	$.each(newarry, function(i, Text) {
-				var td = $("<td></td>");
-				td.text(Text);
-				td.attr("id", i);
-				td.attr("class", "tdcontent" + index);
-				td.appendTo(tr);
-			})
-	var del = $("<button >删除</button>");
-	del.attr("id", "del" + index);
-	var submit = $("<button>提交</button>");
-	submit.attr("id", "submit" + index);
-	var td = $("<td></td>")
-	del.appendTo(td);
-	submit.appendTo(td);
-	submit.hide();
-	td.appendTo(tr);
-	delrow(index, newarry["id"], selectvalue);
-	submitdata(index, selectvalue);
-	edittable(index);
-	return false;
-}
-
-function delrow(index, iddata, selectvalue) {
-
-	$("#del" + index).click(function() {
-		if (confirm("确定要删除该行吗？"))
-		/* 删除行数据 */
-		{
-			$.ajax({
-						url : "/case/edit/" + selectvalue,
-						data : {
-							id : iddata,
-							tag : selectvalue,
-							opt : "delete"
-						},
-						success : function(msg) {
-							$("#rescontent").html(msg);
-							$("#rescontent").show("slow");
-							$("#rescontent").hide("slow");
-							$("#tr" + index).remove();
-						},
-						type : "POST",
-						error : function() {
-							var msg = "删除失败!"
-							$("#pcontent").html("<font color='red>" + msg
-									+ "</font>");
-							$("#pcontent").show("slow");
-							$("#pcontent").hide("slow");
-						}
-					})
-		}
-
-	});
-
-}
 
 function submitdata(index, selectvalue) {
 	$("#submit" + index).click(function() {
@@ -449,8 +309,9 @@ function submitdata(index, selectvalue) {
 						success : function(msg) {
 							$("#rescontent").html(msg);
 							$("#rescontent").show("slow");
-							$("#rescontent").hide("slow");
+
 							$('#submit' + index).hide()
+							$("#rescontent").hide("slow");
 						},
 						type : "POST",
 						error : function() {
@@ -497,9 +358,9 @@ function edittable(index) {
 
 }
 function hidecaseform() {
- /*
-  * 隐藏添加多个问句时候，弹出来的框
-  */
+	/*
+	 * 隐藏添加多个问句时候，弹出来的框
+	 */
 	var clearTag = new Array("sitelist");
 	for (key in clearTag) {
 		$("#" + clearTag[key]).attr("value", "");
@@ -523,4 +384,4 @@ function initTree() {
 }
 jQuery(document).ready(function(data) {
 			initTree();
-});
+		});

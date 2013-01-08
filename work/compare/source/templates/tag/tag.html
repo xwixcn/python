@@ -10,6 +10,7 @@
         <script type="text/javascript" src="/static/js/jquery.ztree.excheck-3.5.js"></script>
         <script type="text/javascript" src="/static/js/jquery.ztree.exedit-3.5.js"></script>
         <script type="text/javascript" src="/static/js/tagcontrol.js"></script>
+        <script type="text/javascript" src="/static/js/common.js"></script>
         <script type="text/javascript" src="/static/js/easypage.js"></script>
         <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
     </HEAD>
@@ -27,22 +28,7 @@
                 </button>
             </div>
             <div class="right">
-                <h1>问句管理</h1>
-                <div id="testcontent" >
-                    <div id="Singleincrease"></div><div id="Batchincrease"></div>
-                    <div id="rescontent"></div>
-                    <table  class='caselist' align="center" border=1 cellspacing="0" width="98%">
-                        <tr id='tr0'>
-                            <td>patternStr</td>
-                            <td>patternCode</td>
-                            <td>treeCode</td>" <td>md5</td>
-                            <td>id</td>
-                            <td>name</td>
-                            <td>OPT</td>
-                        </tr>
-                    </table>
-                    <div id="navigatediv"></div>
-                </div>
+            <IFRAME ID="testIframe" Name="testIframe"FRAMEBORDER=0 SCROLLING=AUTO width=100%  height=1000px SRC="/case/intro"></IFRAME>
             </div>
         </div>
         <div id="rMenu">
@@ -53,45 +39,11 @@
                 <li id="m_edit" onclick="editTreeNode();">
                     修改节点
                 </li>
-                <li id="m_check" onclick="checkTreeNode(true);">
-                    获取问句
-                </li>
                 <li id="m_del" onclick="removeTreeNode();">
                     删除节点
                 </li>
-                <li id="m_unCheck" onclick="checkTreeNode(false);">
-                    unCheck节点
-                </li>
             </ul>
         </div>
-        <div id="cginfo" style="position: absolute; width: 600px; border: 1px solid rgb(0, 0, 0); top: 150px; left: 300px; background-color: rgb(255, 255, 255); display: none;height: 250px">
-            <form id="caseform" name="cgconfig" action="cgaddsave" method="post">
-                <div style="float:right;cursor:pointer;" id="closecg" onclick="hidecaseform()">
-                    关闭
-                </div>
-                <table width="100%" border="0" cellpadding="2" cellspacing="1" class="border">
-                    <tbody>
-                        <tr>
-                            <td width="30%" align="right"><strong>所用site：</strong>
-                            <br>
-                            </td>
-                            <td><textarea name="name" id="sitelist" cols="45" rows="5"></textarea>
-                            <br>
-                            问句列表为一行一个，如：
-                            <br>
-                            浦发银行股价
-                            <br>
-                            浦发银行净利润 </td>
-                        </tr>
-                        <tr>
-                            <td height="60" align="center" colspan="2">
-                            <input type="submit" name="cgs" value="提交">
-                            <input type="reset" name="cgr" value="取消 ">
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </form>
-        </div>
+    
     </BODY>
 </HTML>

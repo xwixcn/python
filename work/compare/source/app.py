@@ -16,8 +16,10 @@ urls = (
          '/config/show', 'readconfig',
          '/config/edit', 'editconfig',
          
+         '/case/(\d+)/(.*)', 'caseindex',
          '/case/(\d+)', 'caseget',
          '/case/edit/(\d+)', 'caseedit',
+         '/case/intro', 'caseintro',
          
          '/result', 'resultindex',
          '/result/round/(\d+)', 'getroundIDdata',
@@ -103,6 +105,9 @@ class editconfig:
 #result zone    
 
 #case zone
+class caseindex:
+    def GET( self , tagid, tagname ):
+        return caserender.case()
 class caseget:
     '''
     tag首页
@@ -118,9 +123,13 @@ class caseedit:
     '''
     def POST( self , tagid ):
         data = web.data()
+        print data
         status = model.postcase( tagid, data )
+        print status
         return status
-
+class caseintro:
+    def GET( self ):
+        return caserender.caseintro()
 #tag zone
 class tagindex:
     def GET( self ):

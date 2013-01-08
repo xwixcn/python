@@ -88,10 +88,18 @@ def posttag( tagid , data ):
 
 def getcase( tag ):
     try:
-        responsedata = urllib2.urlopen( 'http://192.168.23.75/backend/casemanager/tag/%s/10' % ( tag, ) ).read()
+        responsedata = urllib2.urlopen( 'http://192.168.23.75/backend/casemanager/tag/%s/max' % ( tag, ) ).read()
+        data = json.loads( responsedata )
+        result = []
+        for elem in data:
+            resultdic = {}
+            resultdic["name"] = elem["name"]
+            resultdic["patternStr"] = elem["patternStr"]
+            resultdic["id"] = elem["id"]
+            result.append( resultdic )
+        responsedata = json.dumps( result )      
     except:
         responsedata = -1
-    print responsedata
     return responsedata
     
 def postcase( tagid , data ):
@@ -150,6 +158,6 @@ def killjob( jobid ):
     return responsedata
 if __name__ == "__main__":
     #setconfigcontent('fname=%E6%8E%A5%E6%94%B6%E9%97%AE%E5%8F%A5%E5%9C%B0%E5%9D%80&lname=http%3A%2F%2F192.168.23.75%2Fbackend%2Fcases%2Fmonitor%2Fmin&fname=%E5%8F%91%E9%80%81%E7%BB%93%E6%9E%9C%E5%9C%B0%E5%9D%80&lname=http%3A%2F%2F192.168.23.75%2Fbackend%2Fresults%2Fverify%2F&fname=%E8%BF%9B%E7%A8%8B%E6%95%B0&lname=10&fname=%E6%B5%8B%E8%AF%95%E7%8E%AF%E5%A2%83&lname=http%3A%2F%2F192.168.23.105&fname=%E5%9F%BA%E5%87%86%E7%8E%AF%E5%A2%83&lname=http%3A%2F%2F192.168.23.105&fname=%E6%89%80%E6%9C%89%E7%BB%93%E6%9E%9C%E5%9C%B0%E5%9D%80&lname=http%3A%2F%2F192.168.23.75%2Fbackend%2Fresults%2Fall&fname=%E6%AF%8F%E8%BD%AE%E7%BB%93%E6%9E%9C%E5%9C%B0%E5%9D%80&lname=http%3A%2F%2F192.168.23.75%2Fbackend%2Fresults%2F&fname=%E6%B5%8B%E8%AF%95%E7%8E%AF%E5%A2%83&lname=http%3A%2F%2F192.168.23.105')
-    print gettagcontent()
+    print getcase( 142 )
     
 

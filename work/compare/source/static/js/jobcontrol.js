@@ -12,9 +12,9 @@ function addjob() {
 	select.appendTo(td);
 	var tr = $("<tr><td>" + id + "</td></tr>")
 	td.appendTo(tr);
-	var td = $("<td><a onclick='startjob(" + id
+	var td = $("<td><a href='javascript:' onclick='startjob(" + id
 			+ ")'><font color='blue'>运行</font></a></td>")
-	var td2 = $("<td>未启动</td><td><a id=look" + id + ">查看</a></td><td><a id=job"
+	var td2 = $("<td>未启动</td><td><a href='javascript:' id=look" + id + ">查看</a></td><td><a id=job"
 			+ id + ">暂无</a></td>")
 	td.attr("id", "run" + id);
 	tr.attr("class", "tr" + id);
@@ -27,8 +27,9 @@ function startjob(id) {
 	var selectIndex = document.getElementById("myselect1").selectedIndex
 	var selectText = document.getElementById("myselect1").options[selectIndex].text
 	var url="/job/start/"+selectText
-	alert(url);
-	$.get(url, function(data) {
+	$.ajax({
+		url:url,
+		success:function(data) {
 				var jsonobj = $.parseJSON(data);
 				if (jsonobj.status == "-1") {
 					$("#run" + id).next().html("<a>启动失败</a>");
@@ -40,7 +41,12 @@ function startjob(id) {
 					getstatus(jsonobj.jobid, id);
 				}
 
-			})
+			},
+		error:function(){
+			$("#run" + id).next().html("<a>启动失败</a>");
+		}
+	})
+
 }
 
 function killjob(jobid) {
@@ -66,7 +72,7 @@ function getstatus(jobid, id) {
 		} else {
 			$("#run" + id)
 					.next()
-					.html("<font color='green'><strong>正在运行中</strong></font><a onclick='killjob("
+					.html("<font color='green'><strong>正在运行中</strong></font><a href='javascript:' onclick='killjob("
 							+ jobid + ")'><font color='red'>停止运行</font></a>");
 			timeout = setTimeout("getstatus(" + jobid + "," + id + ")", 3000);
 		}
