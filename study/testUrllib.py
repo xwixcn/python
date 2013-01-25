@@ -64,10 +64,6 @@ class NoExceptionCookieProcesser( urllib2.HTTPCookieProcessor ):
     def http_error_403( self, req, fp, code, msg, hdrs ):
         return fp
 
-
-
-
-
 class Test_httplib( object ):
 
     def __init__( self, url ):
@@ -85,10 +81,7 @@ class Test_httplib( object ):
         print"msg:", r1.msg
         print"headers:", r1.getheaders()
         HttpCon.close()
-
-
     
-
 if __name__ == "__main__":
     T_urllb = Test_urllib( 'http://www.baidu.com' )
     T_urllb.use_urltriver()

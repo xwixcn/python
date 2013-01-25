@@ -1,4 +1,4 @@
-#-*-coding:utf
+#-*-coding:utf-8
 #!/usr/bin/python
 #
 import smtplib
