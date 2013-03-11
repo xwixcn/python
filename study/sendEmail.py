@@ -10,7 +10,7 @@ file_ob = open( '/home/mailcontent.txt' )
 try:
     content = file_ob.read()
 finally:
-    file_ob.close()
+ 	file_ob.close()
 msg = MIMEText( content, 'plain', 'utf-8' )
 msg['Subject'] = 'this is a test from python'
 msg['From'] = 'from@163.com'
