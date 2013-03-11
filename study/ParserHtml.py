@@ -40,19 +40,8 @@ class Parsehtml():
         Result=self.__getdata(soup)
         return Result
 
-    '''def get_longhu(self,marketname):
-        Stockmarket=self.soup.findAll('div',attrs={'class':'lhb_list'})
-        longhuDic={}
-        for market in Stockmarket:
-            markettitle=market.findAll('div',attrs={'class':'lhb_hd'})[0].text.encode('utf-8')
-            longhuDic[markettitle]=self.__getdata(market)
-        try:
-            print '%s的数据如下:\n%s'%(marketname,longhuDic[marketname])
-            return longhuDic[marketname]
-        except KeyError,e:
-            print '没有这个板块,请输入股市名字:1.沪市,2.深市,3.中小企业板,4.创业板'''
 
-            
+          
 if __name__ == "__main__":
     soup = Parsehtml()
      #b = soup.get_Fundsdata( 'http://data.10jqka.com.cn/funds/', '月资金' )

@@ -1,9 +1,0 @@
-<uwsgi>
-<socket>127.0.0.1:9091</socket>
-<master />
-<wsgi-file>../source/view/app.py</wsgi-file>
-<memory-report>true</memory-report>
-<processes>1</processes>
-<daemonize>../log/uwsgi.log</daemonize>
-<limit-as>1280</limit-as>
-</uwsgi>
