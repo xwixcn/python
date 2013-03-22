@@ -22,3 +22,11 @@ def lastmonth_Count():
         lastmonth = nowTime.month - 1
     return calendar.monthrange( nowTime.year, lastmonth )[1]
 
+
+def
+if __name__ == '__main__':
+    atime="2013/02/26"
+    nowTime = datetime.datetime.now()
+
+
+    print nowTime
