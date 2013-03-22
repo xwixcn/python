@@ -1,5 +1,5 @@
 #! /usr/bin/env python
-from client.httpsqs import Httpsqs
+import Httpsqs
 import json
 import socket
 import time
