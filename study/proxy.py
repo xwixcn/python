@@ -3,7 +3,6 @@
 用来测试代理访问
 '''
 import urllib2
-
 def use_proxy():
     enable_proxy = True
     proxy_Handle = urllib2.ProxyHandler( {"http": "http://172.20.23.205:80"} )

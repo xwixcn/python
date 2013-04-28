@@ -1,4 +1,7 @@
 #-*-coding:utf-8
+'''
+用来从excel导入数据到mysql
+'''
 import MySQLdb
 import xlrd
 import hashlib
