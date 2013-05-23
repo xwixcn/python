@@ -9,19 +9,59 @@ import urllib2
 import cookielib
 import json
 import sys
-def delstock(stocknum):  
-    cj=cookielib.CookieJar()
-    opener=urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
-    urllib2.install_opener(opener)
-    req=urllib2.Request(url='http://pass.10jqka.com.cn/login',data='act=login_submit&redir=http%3A%2F%2Fx.10jqka.com.cn%2Fstockpick%2Fsearch%3FpreParams%3D%26ts%3D1%26f%3D1%26qs%3Dsl_1%26querytype%3D%26tid%3Dstockpick%26w%3D%25E4%25BB%258A%25E5%25B9%25B4%25E8%25B7%258C%25E5%25B9%2585%253E20%2525%25EF%25BC%258C%25E8%2582%25A1%25E4%25BB%25B7%25E5%25A4%25A7%25E4%25BA%258E10%25E5%2585%2583%26queryarea%3Dall&uname=wdsrkj827&passwd=123456&submit=%B5%C7%A1%A1%C2%BC&longLogin=on')
-    urllib2.urlopen(req).read()
-    while stocknum:
-        data=urllib.urlencode({"code":stocknum})
-        header={"User-Agent":"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1496.0 Safari/537.36 AlexaToolbar/alxg-3.1"}
-        req=urllib2.Request(url='http://i.10jqka.com.cn/ucenter/selfstock/del',data=data,headers=header)
-        response=json.loads(urllib2.urlopen(req).read())
-        print response
-        stocknum=response["result"]
+# def delstock(stocknum):  
+#     cj=cookielib.CookieJar()
+#     opener=urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
+#     urllib2.install_opener(opener)
+#     LOGINPARAMS={"act":"login_submit",
+#                  "uname":"wdsrkj827",
+#                  "passwd":"123456"
+#                  }
+#     data=urllib.urlencode(LOGINPARAMS)+"&submit=%B5%C7%A1%A1%C2%BC&longLogin=on"
+#     req=urllib2.Request(url='http://pass.10jqka.com.cn/login',data=data)
+#     urllib2.urlopen(req).read()
+#     while stocknum:
+#         data=urllib.urlencode({"code":stocknum})
+#         header={"User-Agent":"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1496.0 Safari/537.36 AlexaToolbar/alxg-3.1"}
+#         req=urllib2.Request(url='http://i.10jqka.com.cn/ucenter/selfstock/del',data=data,headers=header)
+#         response=json.loads(urllib2.urlopen(req).read())
+#         print response
+#         stocknum=response["result"]
+
+
+class DelSelfStock():
+    def __init__(self,uname,password):
+        self.uname=uname
+        self.password=password
+    
+    def run(self):
+        cj=cookielib.CookieJar()
+        opener=urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
+        urllib2.install_opener(opener)
+        LOGINDICT={"act":"login_submit",
+                 "uname":"%s"%(self.uname),
+                 "passwd":"%s"%(self.password)
+                 }
+        LOGINPARAMES=urllib.urlencode(LOGINDICT)+"&redir=http%3A%2F%2Fx.10jqka.com.cn%2Fstockpick&submit=%B5%C7%A1%A1%C2%BC&longLogin=on".encode("utf-8")
+        req=urllib2.Request(url='http://pass.10jqka.com.cn/login',data=LOGINPARAMES)
+        urllib2.urlopen(req).read()
+        delflag=True
+        while delflag:
+            stocknum=raw_input("请输入第一页的股票代码，如果不想继续，请输入No:")
+            if stocknum in ["No","N"]:
+                break
+            header={"User-Agent":"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1496.0 Safari/537.36 AlexaToolbar/alxg-3.1"}
+            while stocknum:
+                data=urllib.urlencode({"code":stocknum})
+                req=urllib2.Request(url='http://i.10jqka.com.cn/ucenter/selfstock/del',data=data,headers=header)
+                response=json.loads(urllib2.urlopen(req).read())
+                print response
+                stocknum=response["result"]
+                
+    def startdel(self):
+        self.run()
+
 if __name__=="__main__":
-    stocknum=raw_input("please input stocknum:")
-    delstock(stocknum)
+    d=DelSelfStock("wdsrkj827","123456")
+    d.startdel()
+    
