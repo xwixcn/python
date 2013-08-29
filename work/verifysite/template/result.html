@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block tilte %}结果{%endblock%}
+
+{% block content%}
+<table border="0" cellspacing="0" cellpadding="0" class="mytable">
+
+	<tr>
+		<td>case</td>
+		<td >errorresult</td>
+		<td >jobid</td>
+        <td >linktowencai</td>
+	</tr>
+	{% for result in results %}
+	<tr>
+		<td>{{result.case.getCaseLink|safe}}</td>
+		<td>{{result.falseresult}}</td>
+		<td>{{result.jobid}}</td>
+		<td>{{result.linktowencai|safe}}</td>
+	</tr>
+	{%endfor%}
+</table>
+<div id="container" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+{%endblock%}

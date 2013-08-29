@@ -1,0 +1,21 @@
+
+{% extends "base.html" %}
+{% block title %}问句{%endblock%}
+{% block content %}
+<table border="0" cellspacing="0" cellpadding="0" class="mytable">
+
+	<tr>
+		<td>case</td>
+		<td >comparelist</td>
+		<td >addtime</td>
+	</tr>
+	{% for case in cases %}
+	<tr>
+		<td>{{case.getCaseLink|safe}}</td>
+		<td>{{case.comparelist}}</td>
+		<td>{{case.addtime}}</td>
+	</tr>
+	{%endfor%}
+</table>
+<div id="container" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+{%endblock%}

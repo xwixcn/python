@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}作业{%endblock%}
+{% block content %}
+
+<table border="0" cellspacing="0" cellpadding="0" class="mytable">
+	<tr>
+		<td>id</td>
+		<td >totalnum</td>
+		<td >successnum</td>
+        <td >errornum</td>
+        <td >errorcase</td>
+	</tr>
+	{% for job in jobs %}
+	<tr>
+		<td>{{job.jobid|safe}}</td>
+		<td>{{job.totalnum}}</td>
+		<td>{{job.successnum}}</td>
+		<td>{{job.errornum}}</td>
+		<td>
+			<ul>
+				{% for case in job.fail_cases %}
+				<li>{{case.getQuery}}</li>
+				{%endfor%}
+			</ul>
+		</td>
+	</tr>
+	{%endfor%}
+</table>
+<div id="container" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+{%endblock%}

@@ -1,0 +1,242 @@
+[27/Aug/2013 15:31:13] INFO [verify:20] 最新价大于100
+[27/Aug/2013 15:31:16] INFO [verify:20] 最新价大于100
+[27/Aug/2013 15:31:45] INFO [verify.method:20] 最新价大于100
+[28/Aug/2013 17:26:46] ERROR [verify.method:35] global name 'asas' is not defined
+[29/Aug/2013 09:38:28] INFO [verify.method:55] <verify.data.NodeData object at 0x026458B0>
+[29/Aug/2013 09:38:33] INFO [verify.method:55] <verify.data.NodeData object at 0x02645870>
+[29/Aug/2013 09:38:35] INFO [verify.method:55] <verify.data.NodeData object at 0x0263A690>
+[29/Aug/2013 09:38:36] INFO [verify.method:55] <verify.data.NodeData object at 0x0263AD90>
+[29/Aug/2013 09:39:48] INFO [verify.method:56] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 09:39:48] INFO [verify.method:56] datalist:[u'626.74418604651']
+[29/Aug/2013 09:42:25] INFO [verify.method:56] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 09:42:25] ERROR [verify.method:34] global name 'sefl' is not defined
+[29/Aug/2013 09:42:28] INFO [verify.method:56] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 09:42:28] ERROR [verify.method:34] global name 'sefl' is not defined
+[29/Aug/2013 09:42:54] INFO [verify.method:56] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 09:42:54] INFO [verify.asserts:50] set([u'\u8d35\u5dde\u8305\u53f0'])
+[29/Aug/2013 09:42:55] INFO [verify.method:56] datalist:[u'626.74418604651']
+[29/Aug/2013 09:42:55] INFO [verify.asserts:50] set([u'626.74418604651'])
+[29/Aug/2013 09:46:02] INFO [verify.method:56] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 09:46:02] INFO [verify.method:56] datalist:[u'626.74418604651']
+[29/Aug/2013 09:46:03] INFO [verify.method:56] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 09:46:04] INFO [verify.method:56] datalist:[u'626.74418604651']
+[29/Aug/2013 09:47:33] INFO [verify.method:24] jobid:45
+[29/Aug/2013 09:47:36] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 09:47:46] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 09:58:39] INFO [verify.method:24] jobid:47
+[29/Aug/2013 09:58:40] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 09:58:41] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 09:58:41] INFO [verify.method:57] datalist:[u'300334.SZ']
+[29/Aug/2013 09:58:41] INFO [verify.method:24] jobid:49
+[29/Aug/2013 09:58:43] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 09:58:43] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 09:58:44] INFO [verify.method:57] datalist:[u'300334.SZ']
+[29/Aug/2013 10:00:20] INFO [verify.method:24] jobid:51
+[29/Aug/2013 10:00:26] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:00:30] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:00:30] INFO [verify.method:57] datalist:[u'300334.SZ']
+[29/Aug/2013 10:00:30] INFO [verify.method:24] jobid:53
+[29/Aug/2013 10:00:31] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:00:31] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:00:37] INFO [verify.method:57] datalist:[u'300334.SZ']
+[29/Aug/2013 10:05:25] INFO [verify.method:24] jobid:55
+[29/Aug/2013 10:05:26] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:05:30] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:05:30] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:05:30] INFO [verify.method:24] jobid:57
+[29/Aug/2013 10:05:31] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:05:31] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:05:32] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:06:48] INFO [verify.method:24] jobid:59
+[29/Aug/2013 10:06:50] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:06:53] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:06:54] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:06:54] INFO [verify.method:24] jobid:61
+[29/Aug/2013 10:06:54] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:06:55] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:06:55] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:07:45] INFO [verify.method:24] jobid:63
+[29/Aug/2013 10:07:45] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:07:46] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:07:46] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:08:20] INFO [verify.method:24] jobid:65
+[29/Aug/2013 10:08:20] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:08:21] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:08:22] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:08:22] INFO [verify.method:24] jobid:67
+[29/Aug/2013 10:08:22] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:08:23] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:08:23] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:12:50] INFO [verify.method:24] jobid:69
+[29/Aug/2013 10:12:51] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:12:52] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:12:52] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:12:53] INFO [verify.method:24] jobid:71
+[29/Aug/2013 10:12:53] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:12:54] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:12:54] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:19:01] INFO [verify.method:24] jobid:73
+[29/Aug/2013 10:19:01] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:19:02] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:19:02] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:19:04] INFO [verify.method:24] jobid:75
+[29/Aug/2013 10:19:05] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:19:06] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:19:06] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:22:22] INFO [verify.method:24] jobid:77
+[29/Aug/2013 10:22:22] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:22:24] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:22:24] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:22:44] INFO [verify.method:24] jobid:79
+[29/Aug/2013 10:22:45] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:22:45] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:22:45] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:23:28] INFO [verify.method:24] jobid:81
+[29/Aug/2013 10:23:29] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:23:30] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:23:30] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:23:30] INFO [verify.method:24] jobid:83
+[29/Aug/2013 10:23:31] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:23:32] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:23:32] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:23:47] INFO [verify.method:24] jobid:85
+[29/Aug/2013 10:23:47] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:23:48] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:23:48] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:24:39] INFO [verify.method:24] jobid:87
+[29/Aug/2013 10:24:40] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:24:41] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:24:41] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:26:49] INFO [verify.method:24] jobid:89
+[29/Aug/2013 10:27:58] INFO [verify.method:24] jobid:91
+[29/Aug/2013 10:27:59] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:28:02] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:28:03] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:28:39] INFO [verify.method:24] jobid:93
+[29/Aug/2013 10:28:39] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:28:40] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:28:40] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:28:52] INFO [verify.method:24] jobid:95
+[29/Aug/2013 10:28:53] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:28:53] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:28:54] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:28:57] INFO [verify.method:24] jobid:97
+[29/Aug/2013 10:28:57] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:28:57] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:28:58] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:29:09] INFO [verify.method:24] jobid:99
+[29/Aug/2013 10:29:09] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:29:10] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:29:10] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:29:16] INFO [verify.method:24] jobid:101
+[29/Aug/2013 10:29:17] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:29:17] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:29:18] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:29:28] INFO [verify.method:24] jobid:103
+[29/Aug/2013 10:29:28] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:29:29] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:29:29] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:29:30] INFO [verify.method:24] jobid:105
+[29/Aug/2013 10:29:30] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:29:31] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:29:31] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:32:25] INFO [verify.method:24] jobid:107
+[29/Aug/2013 10:32:26] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:32:27] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:32:28] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:39:33] INFO [verify.method:24] jobid:109
+[29/Aug/2013 10:39:47] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:40:25] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:40:26] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:40:41] INFO [verify.method:24] jobid:111
+[29/Aug/2013 10:40:41] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:40:42] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:40:42] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 10:40:45] INFO [verify.method:24] jobid:113
+[29/Aug/2013 10:40:45] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 10:40:46] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 10:40:52] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 11:01:50] INFO [verify.method:24] jobid:115
+[29/Aug/2013 11:01:54] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 11:01:55] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 11:01:55] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 11:02:43] INFO [verify.method:24] jobid:117
+[29/Aug/2013 11:02:43] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 11:02:44] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 11:02:45] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 11:05:07] INFO [verify.method:24] jobid:119
+[29/Aug/2013 11:05:07] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 11:05:08] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 11:05:12] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 11:05:43] INFO [verify.method:24] jobid:121
+[29/Aug/2013 11:05:43] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 11:05:44] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 11:05:44] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 11:06:05] INFO [verify.method:24] jobid:123
+[29/Aug/2013 11:06:06] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 11:06:07] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 11:06:07] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 11:06:27] INFO [verify.method:24] jobid:125
+[29/Aug/2013 11:06:27] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 11:06:27] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 11:06:30] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 11:07:07] INFO [verify.method:24] jobid:127
+[29/Aug/2013 11:07:22] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 11:07:37] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 11:07:37] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 11:11:48] INFO [verify.method:24] jobid:129
+[29/Aug/2013 11:11:48] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 11:11:49] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 11:11:50] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 11:13:14] INFO [verify.method:24] jobid:131
+[29/Aug/2013 11:13:14] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 11:13:15] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 11:13:15] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 11:13:57] INFO [verify.method:24] jobid:133
+[29/Aug/2013 11:13:57] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 11:13:58] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 11:13:58] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 11:14:28] INFO [verify.method:24] jobid:135
+[29/Aug/2013 11:14:28] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 11:14:29] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 11:14:29] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 11:15:09] INFO [verify.method:24] jobid:137
+[29/Aug/2013 11:15:10] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 11:15:10] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 11:15:11] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 11:15:32] INFO [verify.method:24] jobid:139
+[29/Aug/2013 11:15:33] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 11:15:33] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 11:15:34] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 11:16:00] INFO [verify.method:24] jobid:141
+[29/Aug/2013 11:16:00] INFO [verify.method:57] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 11:16:01] INFO [verify.method:57] datalist:[u'626.74418604651']
+[29/Aug/2013 11:16:01] INFO [verify.method:57] datalist:[u'300334']
+[29/Aug/2013 15:29:50] INFO [verify.method:22] jobid:143
+[29/Aug/2013 15:29:50] INFO [verify.method:55] datalist:[u'600519', u'600436', u'000661', u'000538']
+[29/Aug/2013 15:29:52] INFO [verify.method:55] datalist:[u'626.74418604651']
+[29/Aug/2013 15:29:52] INFO [verify.method:55] datalist:[u'300334']
+[29/Aug/2013 15:30:29] INFO [verify.method:22] jobid:145
+[29/Aug/2013 15:30:30] INFO [verify.method:55] datalist:[u'600519', u'600436', u'000661', u'000538']
+[29/Aug/2013 15:30:30] INFO [verify.method:55] datalist:[u'626.74418604651']
+[29/Aug/2013 15:30:35] INFO [verify.method:55] datalist:[u'300334']
+[29/Aug/2013 15:31:06] INFO [verify.method:22] jobid:147
+[29/Aug/2013 15:31:07] INFO [verify.method:55] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 15:31:07] INFO [verify.method:55] datalist:[u'626.74418604651']
+[29/Aug/2013 15:31:10] INFO [verify.method:55] datalist:[u'300334']
+[29/Aug/2013 17:04:09] INFO [verify.method:22] jobid:149
+[29/Aug/2013 17:04:09] INFO [verify.method:55] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 17:04:10] INFO [verify.method:55] datalist:[u'626.74418604651']
+[29/Aug/2013 17:04:11] INFO [verify.method:55] datalist:[u'300334']
+[29/Aug/2013 17:04:11] INFO [verify.method:55] datalist:[u'600743']
+[29/Aug/2013 17:04:56] INFO [verify.method:22] jobid:151
+[29/Aug/2013 17:04:56] INFO [verify.method:55] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 17:04:57] INFO [verify.method:55] datalist:[u'626.74418604651']
+[29/Aug/2013 17:05:00] INFO [verify.method:55] datalist:[u'300334']
+[29/Aug/2013 17:05:00] INFO [verify.method:55] datalist:[u'600743']
+[29/Aug/2013 17:12:26] INFO [verify.method:22] jobid:153
+[29/Aug/2013 17:12:26] INFO [verify.method:55] datalist:[u'\u8d35\u5dde\u8305\u53f0', u'\u7247\u4ed4\u7640', u'\u957f\u6625\u9ad8\u65b0', u'\u4e91\u5357\u767d\u836f']
+[29/Aug/2013 17:12:32] INFO [verify.method:55] datalist:[u'626.74418604651']
+[29/Aug/2013 17:12:32] INFO [verify.method:55] datalist:[u'300334']
+[29/Aug/2013 17:12:32] INFO [verify.method:55] datalist:[]
+[29/Aug/2013 17:12:33] INFO [verify.method:55] datalist:[u'601398', u'601288', u'601988', u'601939', u'601857', u'600028']

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}问句编辑{%endblock%}
+
+{% block content%}
+
+<ul align="left">
+	<li>
+		<a href="/verify/case/add/">添加问句</a>
+	</li>
+	<li>
+		<a href="delete/">删除问句</a>
+	</li>
+</ul>
+{% if status%}
+<ul>
+    <li>
+        {{status}}
+    </li>
+</ul>
+{%endif%}
+<form enctype="multipart/form-data" action="" method="post" id="case_form">
+{% csrf_token %}
+{{caseform.as_p}}
+<inupt id="id_id" name="id" value="{{caseid}}" hide=True>
+<input type="submit" value="提交">
+</form>
+{%endblock%}
